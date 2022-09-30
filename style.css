@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 10px;
+    background: linear-gradient(135deg, #4258d0, #c94fc0);
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+.container .tittle {
+    font-size: 30px;
+    font-weight: 900;
+}
+
