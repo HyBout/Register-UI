@@ -33,9 +33,8 @@ body {
     margin: 20px 0 12px 0;
 }
 .container form .user-info-list .user-info span.info {
-    display: block;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .container form .user-info-list .user-info {
@@ -63,4 +62,26 @@ body {
 }
 .container form .button input:hover {
     background: linear-gradient(-135deg, #4486d6, #cf5b8f);
+}
+
+.container form .user-info-list .user-info span#error-fullname {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-username {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-password {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-confirm-password {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-email {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-phone {
+    color: red;
+}
+.container form .user-info-list .user-info span#error-birthdate {
+    color: red;
 }
