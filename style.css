@@ -50,7 +50,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.container form .button input {
+.container form .button button {
     width: 100%;
     height: 35px;
     border-radius: 5px;
@@ -60,7 +60,7 @@ body {
     background: linear-gradient(135deg, #4486d6, #cf5b8f);
     transition: all 0.3s ease;
 }
-.container form .button input:hover {
+.container form .button button:hover {
     background: linear-gradient(-135deg, #4486d6, #cf5b8f);
 }
 

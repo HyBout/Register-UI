@@ -12,42 +12,81 @@ function validateForm() {
     var birthdate = document.getElementById('birthdate').value
     var phone = document.getElementById('phone').value
 
-
     var error_fullname = document.getElementById('error-fullname')
     var error_username = document.getElementById('error-username')
     var error_email = document.getElementById('error-email')
     var error_phone = document.getElementById('error-phone')
     var error_birthdate = document.getElementById('error-birthdate')
 
+    if (fullname == '' || fullname == null) {
+        error_fullname.innerHTML = `${fullname} không được để trống`
+        return false
+    }
+    else if (!fullnameRegex.test(fullname)) {
+        error_fullname.innerHTML = `${fullname} không hợp lệ`
+        return false
+    }
+    else {
+        error_fullname.innerHTML = "&#10004;"
+    }
 
-    validateField(fullname, error_fullname, fullnameRegex, 'Họ tên')
-    validateField(username, error_username, usernameRegex, 'Tên đăng nhập')
-    validateField(email, error_email, emailRegex, 'Email')
-    validateField(phone, error_phone, phoneRegex, 'Số điện thoại')
-    validateField(birthdate, error_birthdate, birthdateRegex, 'Ngày sinh')
+
+    if (username == '' || username == null) {
+        error_username.innerHTML = `${username} không được để trống`
+        return false
+    }
+    else if (!usernameRegex.test(username)) {
+        error_username.innerHTML = `${username} không hợp lệ`
+        return false
+    }
+    else {
+        error_username.innerHTML = "&#10004;"
+    }
+
+    if (email == '' || email == null) {
+        error_email.innerHTML = `${email} không được để trống`
+        return false
+    }
+    else if (!emailRegex.test(email)) {
+        error_email.innerHTML = `${email} không hợp lệ`
+        return false
+    }
+    else {
+        error_email.innerHTML = "&#10004;"
+    }
+
+    if (phone == '' || phone == null) {
+        error_phone.innerHTML = `${phone} không được để trống`
+        return false
+    }
+    else if (!phoneRegex.test(phone)) {
+        error_phone.innerHTML = `${phone} không hợp lệ`
+        return false
+    }
+    else {
+        error_phone.innerHTML = "&#10004;"
+    }
+
+    if (birthdate == '' || birthdate == null) {
+        error_birthdate.innerHTML = `${birthdate} không được để trống`
+        return false
+    }
+    else if (!birthdateRegex.test(birthdate)) {
+        error_birthdate.innerHTML = `${birthdate} không hợp lệ`
+        return false
+    }
+    else {
+        error_birthdate.innerHTML = "&#10004;"
+    }
 
 
     if (fullname && username && email && phone && birthdate) {
         var info = 'Đăng kí thành công với thông tin: \n'
         info += fullname + '\n' + username + '\n' + email + '\n' + phone + '\n' + birthdate
         alert(info)
-    
     }
 
 
     return false
 
-}
-
-function validateField(input, error_input, regex, field) {
-    if (input == '' || input == null) {
-        error_input.innerHTML = `${field} không được để trống`
-    }
-    else if (!regex.test(input)) {
-        error_input.innerHTML = `${field} không hợp lệ`
-    }
-    else {
-        error_input.innerHTML = "&#10004;"
-    }
-    return false
 }
