@@ -41,10 +41,10 @@ Hệ thống quản lý học sinh về cơ bản thực hiện và xây dựng 
 # ĐIỀU KIỆN CÀI ĐẶT
 
  - Môi trường: 
- - Front-end: Htlm, Css, Javascript, Vuejs
- - Back-end: Nodejs, Express
+    - Front-end: Htlm, Css, Javascript, Vuejs
+    - Back-end: Nodejs, Express
  
- -Công cụ lập trình: Visual Studio Code
+ - Công cụ lập trình: Visual Studio Code
  
 # HƯỚNG DẪN CÀI ĐẶT
 
@@ -67,6 +67,14 @@ $ node server.js
 ```
 
 
-# LỜI CẢM ƠN
-Trong suốt quá trình học tập môn Nhập môn Công nghệ Phần mềm và hoàn thành đồ án Quản lý học sinh, nhóm đã nhận được những kiến thức vô cùng bổ ích từ thầy Ngô Ngọc Đăng Khoa và thầy Thái Hài Dương. Thông qua việc hoàn thành đồ án, nhóm chúng em xin được gửi lời cám ơn đến các thầy vì sự tận tâm và vì những gì thầy đã truyền đạt cho chúng em.
-Trân trọng.
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
