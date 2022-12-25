@@ -60,7 +60,7 @@ $ npm run serve
 
 - Back-end:
 > Chạy theo những lệnh dưới đây
-- ```
+```
 $ git clone https://github.com/FaeWulf/CSC13002-BE.git
 $ npm install
 $ node server.js
